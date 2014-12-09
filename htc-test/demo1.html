@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>htc</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="js/zepto.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<!-- 选择合成图 -->
+	<div id="choose">
+		<div id="banner">
+			<img src="images/banner.jpg" alt="">
+		</div>
+
+		<h4>第一步：任意选择两个明星的照片</h4>
+
+		<ul class="img-container clearfix" id="container">
+			<li><img src="images/1.jpg" alt=""></li>
+			<li><img src="images/2.jpg" alt=""></li>
+			<li><img src="images/3.jpg" alt=""></li>
+			<li><img src="images/4.jpg" alt=""></li>
+			<li><img src="images/5.jpg" alt=""></li>
+			<li><img src="images/6.jpg" alt=""></li>
+			<li><img src="images/7.jpg" alt=""></li>
+			<li><img src="images/8.jpg" alt=""></li>
+			<li><img src="images/9.jpg" alt=""></li>
+			<li><img src="images/10.jpg" alt=""></li>
+			<li><img src="images/11.jpg" alt=""></li>
+			<li><img src="images/12.jpg" alt=""></li>
+			<li><img src="images/13.jpg" alt=""></li>
+			<li><img src="images/14.jpg" alt=""></li>
+			<li><img src="images/15.jpg" alt=""></li>
+			<li><img src="images/16.jpg" alt=""></li>
+			<li><img src="images/17.jpg" alt=""></li>
+			<li><img src="images/18.jpg" alt=""></li>
+			<li><img src="images/19.jpg" alt=""></li>
+			<li><img src="images/20.jpg" alt=""></li>
+		</ul>
+
+		<h4>第二步：选择下面两款手机任意一款进行合成</h4>
+
+		<div class="buttons">
+			<div class="button">
+				<button class="htc_m_eye" onclick="showResult()">htc M eye</button>
+			</div>
+			<div class="button">
+				<button class="htc_a820" onclick="showResult()">htc A820</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- 展示合成图 -->
+	<div id="result">
+		<div class="text">这是预留的文字</div>
+		<div class="large animated fadeInDown" id="large_container">
+			<div class="choose_pic">
+				<img src="images/20.jpg" alt=""><img src="images/19.jpg" alt="">
+				<h3>他们的合成结果是</h3>
+			</div>
+			<div class="picture">
+				<img src="images/test.jpg">
+			</div>
+		</div>
+		<div class="share">
+			<button>分享转发到朋友圈</button>
+		</div>
+	</div>
+
+</body>
+</html>

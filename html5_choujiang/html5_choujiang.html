@@ -1,0 +1,330 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+        <meta name="author" content="m.banggo.com" />
+        <meta name="copyright"  content="Copyright &copy;m.banggo.com 版权所有" />
+        
+        <script type="text/javascript" src="http://s3.mb-go.com/pub7/wap/js/zepto.min.js?v=20140220"></script>
+        <script type="text/javascript" src="http://s3.mb-go.com/pub7/wap/js/swipe.min.js?v=20140526"></script>
+        <title>积分大转盘千万豪礼欢乐送-邦购网触屏版</title>
+    
+        <!-- wap端头部导航 -->
+        <link rel="stylesheet" type="text/css" href="http://s3.mb-go.com/pub7/wap/css/global.min.css?v=20140610" />
+        <link rel="stylesheet" type="text/css" href="http://s3.mb-go.com/pub7/wap/css/.min.css?v=" />
+</head>
+<body>
+
+<!-- wap通用导航头 -->
+    <header class="H_title H_index">
+            <span class="H_left"></span>
+                    积分大转盘千万豪礼欢乐送    
+        <span class="H_right">
+            <span id="guide_nav"></span>
+        </span>
+    </header>
+    <section id="guide">
+    <!-- 品牌页面、购物车、商品详情、团购详情、订单中心，分类页面、我的邦购、登录、注册、活动 start-->
+    <a href="http://m.banggo.com" data-ajax="false" class="icon_guide icon_gh">首页</a>
+    <a href="http://m.banggo.com/List/category" data-ajax="false" class="icon_guide icon_cl">分类搜索</a>
+    <a href="http://m.banggo.com/cart" data-ajax="false" class="icon_guide icon_bag">购物袋<strong name="shop_num">2</strong></a>
+    <a href="http://m.banggo.com/user" data-ajax="false" class="icon_guide icon_my">我的邦购</a>    <!-- end -->
+    </section>
+
+
+<style>
+.H_title { display: none;}
+.tools { display: none;}
+.fotter_Copy h1 { background: #463772;}
+.fotter_Copy h1 p a { color: #bca5fe;}
+.fotter_Copy h1 .tophead { color: #bca5fe;}
+.fotter_Copy a { color: #bca5fe;}
+.fotter_Copy .blue { color: #bca5fe;}
+.copy_right { color: #bca5fe; padding-bottom: 10px;}
+.down_app { border: none;}
+
+    body{ text-align:center; padding: 0; margin: 0; background: #332853; }
+    .page_wrap { background: #332853;}
+    .banner { width: 320px; margin: 0 auto;}
+    .banner img { max-width: 100%; margin: 0 auto;}
+    .ly-plate{ position:relative;width:320px;height:320px; margin:20px auto 0;}
+    .rotate-bg{width:320px;height:320px;background:url('http://img.mbanggo.com/sources/bgimages/20140419/lucky/plate.png') center center; background-size: 300px; background-repeat: no-repeat; position:absolute;top:0;left:0}
+    .ly-plate div.lottery-star{width:115px; height:115px; position:absolute;top:104px;left:104px; z-index:10;}
+    .ly-plate div.lottery-star #lotteryBtn{   cursor: pointer;     position: absolute;    top:0;      left:0;}
+    .prizeinfo{ display:none; height:120px; width:240px;position:absolute; z-index:12; display:block; left:40px; top:100px; border-radius:10px; background:#fff;}
+	.prizeinfo h2{ height:40px; padding:20px 0; line-height:20px; border-bottom:1px solid #999; font-size:14px; margin: 0;}
+    .prizeinfo .red{ color:red}
+    .ft12{font-size:12px;}
+    .makesure { border-radius:0 0 10px 10px;  font-size:14px; text-align:center; width:100%; float:left; color:#333; line-height:40px; cursor:pointer; background:#ccc; } 
+
+    
+    .N_rule{ width:300px; background: #f8e177; margin: 20px auto 0; }
+    .N_goindex{ text-align:right; font-size:14px; padding:5px 0;}
+    .N_logininfo{ line-height:20px; padding:10px 0 30px; line-height:24px; }
+    .N_logininfo a,
+    .N_goindex a{ color:#c00; text-decoration:underline; padding:0 8px;}
+    .N_logininfo a:hover,
+    .N_goindex a:hover{ color:#b18253;}
+    .News_info ul{ height:30px; background-color:#f9e385; border-bottom:1px dotted #b2700d; width:100%; }
+    .News_info li{ float:left; padding:0; line-height:30px; font-size:14px; color:#663333; cursor:pointer; width: 50%;}
+    .News_info li.current{ background-color:#efb660;}
+    .News_info li a { color: #8a6326;}
+
+    .News_info dl{ border-top:1px dotted #fde6cf;  background-color:#f9e385; height:120px; padding:10px 0; overflow:hidden; color:#630}
+    .News_info dl.scrool{ height:140px; padding:0; overflow-y:scroll;color:#630}
+    .News_info dd{ height:20px; overflow:hidden; line-height:20px;}
+    .N_date{ float:left; width:120px; height:20px; overflow:hidden; line-height:20px;}
+    .N_name{ float:left; width:80px; padding:0 5px; height:20px; overflow:hidden; line-height:20px;}
+    .N_prize{ float:left; width:80px; height:20px; overflow:hidden; line-height:20px;}
+    .N_rule_desc{ padding:20px 0 0; text-align: left;}
+    .N_rule_title{ line-height:30px; border-bottom:1px dotted #b2700d; font-size:14px;  padding-left:15px; color:#630 }
+    .N_rule_content { border-top:1px dotted #fde6cf; color:#630; padding-bottom: 10px; }
+    .N_rule_content p{ padding-left:80px; line-height:20px;}
+    .N_rule_content .title{ margin-left:-60px;}
+    .chance_info{ font-size:14px; color:#330000;}
+    #usersTimes{ font-size:16px; font-weight:bold; padding:0 8px; color:#f10102;}
+    .jifentips{ color:#835801;}
+
+
+    .more_a{ background-color:#fcd077; height:300px;}
+    .more_content{ width:1000px; margin:0 auto;  height:300px;}
+    .more_con{ padding:0 42px 0 43px; overflow:hidden;}
+    .more_link{ display:inline-block; float:left; margin:10px; border:1px solid #ccc;}
+    .more_con a:hover{ border:1px solid #c00;}
+</style>
+<section class="page_wrap">
+    <div class="banner">
+        <img src="http://img.mbanggo.com/sources/bgimages/20140419/lucky/w_1.jpg" alt="">
+        <a href="http://jifen.banggo.com/Index/Index/Activity"><img src="http://img.mbanggo.com/sources/bgimages/20140419/lucky/w_2.jpg" alt=""></a>
+    </div>
+
+	<div class="ly-plate">
+		<div class="prizeinfo" style="display:none"><h2 id="ht">恭喜您，获得<span class="red">200元邦购币</span><p class="ft12">(5分钟内到账)</p>
+		</h2><div class="makesure">确定</div></div>
+        <div class="rotate-bg" id="roate_bc"></div>
+        <div class="lottery-star"><img src="http://img.mbanggo.com/sources/bgimages/20140419/lucky/rotate_start.png" id="lotteryBtn"></div>
+    </div>
+
+    <div class="N_rule">
+         <div class="N_logininfo">
+            <p class="chance_info">您还没有 <a style="cursor:pointer" href="/login?u=/ploy?pid=11">登录</a></p>
+                     </div>
+         <div class="News_info">
+            <ul>
+	            <li class="current" id="prizeList">最新中奖信息</li>
+	                        </ul>
+            <dl style="display:;" id="allLog">
+            	<dd>
+            		<span class="N_date">2014-05-04 23:59</span><span class="N_name">ypljay***</span><span class="N_prize">红包200-30</span>
+            	</dd>                    
+            	<dd>
+            		<span class="N_date">2014-05-04 23:59</span><span class="N_name">alolia***</span><span class="N_prize">红包300-60</span>
+            	</dd>                    
+            	<dd>
+            		<span class="N_date">2014-05-04 23:59</span><span class="N_name">刘伊健***</span><span class="N_prize">红包200-30</span>
+            	</dd>                    
+            	<dd>
+            		<span class="N_date">2014-05-04 23:59</span><span class="N_name">ypljay***</span><span class="N_prize">红包100减10</span>
+            	</dd>                    
+            	<dd>
+            		<span class="N_date">2014-05-04 23:59</span><span class="N_name">刘伊健***</span><span class="N_prize">红包100-10</span>
+            	</dd>                    
+            	<dd>
+            		<span class="N_date">2014-05-04 23:59</span><span class="N_name">alolia***</span><span class="N_prize">红包100-10</span>
+            	</dd>             
+            </dl>
+            <dl style="display:none;" class="scrool" id="usersLog">
+      			加载中...
+            </dl>
+         </div>
+         <div class="N_rule_desc">
+            <h2 class="N_rule_title">活动说明</h2>
+            <div class="N_rule_content">
+                <p><span class="title">活动时间：</span>4.25-5.4</p>
+                <p><span class="title">抽奖条件：</span>会员登录邦购网</p>
+                <p>每抽奖一次将消耗您邦购账户内的20积分</p>
+                <p>每天不限制抽奖次数</p>
+                <p><span class="title">奖品说明：</span>奖品将在中奖后5分钟内自动发放到您的邦购账户， 所有奖品不可兑换现金</p>
+            </div>
+         </div>
+    </div>
+
+</section>
+
+    <script type="text/javascript" src="http://s.mb-go.com/pub7/wap/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="http://s.mb-go.com/pub7/wap/js/jQueryRotate.2.2.js"></script>
+	<script>
+$(function(){
+	  var  tokenkey = '';
+	  //获取token 后绑定转盘开始事件
+	  function getToken(){
+		  doRoll();
+		  $.ajax({
+	          url: "html5_test.php",         
+	          async:false,
+	          success: function(data){
+	        	  var  data = eval("("+data+")"); 
+	        	        tokenkey = data.tokens;
+	        	       $("#lotteryBtn").click(getPrize);
+			  }
+         });
+	  }
+	  getToken();
+	  
+	  //关闭提示窗口
+	   $(".makesure").bind("click",function(){
+	    	$(".prizeinfo").hide();
+	   });
+	  
+	  
+	  //查看myPrize
+	   $("#myPrize").click(function(){
+		    if($(this).hasClass("current")) {return false;}
+		    $(this).addClass("current").prev().removeClass("current");
+	        $.getJSON(consts('m')+'/ploy/getMyPrizeLogs/pid/11',{},function(data){
+	            var html = '';
+	            if(data.data == null) {
+	                html = '暂无中奖信息！';} else {
+	                for(var i=0; i<data.data.length; i++) {
+	                    var logs = data.data[i].note.split('|');
+	                    html += '<dd><span class="N_date">'+logs[0]+'</span><span class="N_name">'+logs[1]+'</span><span class="N_prize">'+logs[2]+'</span></dd>';
+	                    if(i == 49) {
+	                        html += '<dd><a href="http://m.banggo.com/MemberFund/credit" target="_blank">更多>></a></dd>';
+	                    }
+	                }
+	            }
+	            $('#usersLog').html(html).show().prev().hide();
+	        });
+	 });
+	  
+	 $("#prizeList").click(function(){
+		 if($(this).hasClass("current")) {return false;}
+		 $(this).addClass("current").next().removeClass("current");
+                 $.getJSON(consts('m')+'/ploy/logList/pid/11',{},function(data){
+	            var html = '';
+	            if(data.data == null) {
+	                html = '暂无中奖信息！';} else {
+	                for(var i=0; i<data.data.length; i++) {
+	                    var logs = data.data[i].split('|');
+	                    html += '<dd><span class="N_date">'+logs[0]+'</span><span class="N_name">'+logs[1]+'</span><span class="N_prize">'+logs[2]+'</span></dd>';
+	                }
+	            }
+                            $("#allLog").html(html);
+	            $("#allLog").show().next().hide();
+	        });
+		 
+	 });
+	  
+	  //进行抽奖
+	  function getPrize(){
+		  $("#lotteryBtn").unbind("click");
+		  doRoll(function(){
+			  $(".prizeinfo").show();
+              $("#lotteryBtn").click(getPrize); 
+		  });
+   		  $.ajax({
+                url: "/ploy?pid=11&act=runLucky&tokens="+tokenkey,         
+                async:false,
+                success: function(data){
+                    var data = eval("("+data+")"); 
+                    tokenkey = data.tokens;
+                    showPrize(data);
+               }
+          });
+	  }
+	  //旋转转盘
+	  function doRoll(_callback){
+	        $("#roate_bc").rotate({
+	            angle:0, 
+	            duration: 3000, 
+	            animateTo: 1800,
+	            callback: _callback ? _callback : function(){}});
+	  }
+	  //停止转盘
+	  function stopRoll(){
+		  $('#roate_bc').stopRotate();
+	  }
+	  
+	  //显示获奖信息
+	  function  showPrize(data){
+		   var _prizes = [[198,"满100-10元红包"],[342," 1000 邦购币 "],[306,"满300-60元红包"],
+		                   [54," 100元邦购币"],[270," 10元邦购币 "],[126,"满500-100元红包"],
+		                   [18,"满200-30元红包"],[90,"无门槛5元红包"],[234,"500 元邦购币 "],
+		                   [198,"满100-10元红包"],[162,"1 元邦购币"]];
+	  		switch(data.status){
+		  		case 1:
+		  			rotateFunc(_prizes[(data.prize-1)][0],_prizes[(data.prize-1)][1]);
+		  			break;
+		  		case 2:
+		  			$("#ht").html('对不起，您的<span class="red">积分不足</span>');
+					break;
+		  		case 3:
+		  			$("#ht").html('<a href="/login?u=/ploy?pid=11" class="red">点击登录</span>');
+					break;
+		  		case 4:
+		  			$("#ht").html('对不起，<span class="red">' +data.infos+'</span>');
+					break;
+				default:
+					$("#ht").html('网络异常<span class="red" onclick="location.reload();">点击刷新页面</span>');
+					break;
+	  		}
+	   }
+	  
+	  //roll
+	  function rotateFunc(angle,text){
+	    	//angle:奖项对应的角度，text:提示文字    	
+	        $('#roate_bc').stopRotate();
+	        $("#roate_bc").rotate({
+	            angle:0, 
+	            duration: 5000, 
+	            animateTo: angle+1440, //angle是图片上各奖项对应的角度，1440是我要让指针旋转4圈。所以最后的结束的角度就是这样子^^
+	            callback:function(){            	
+	            	$("#ht").html('恭喜您，获得<span class="red">'+text+'</span><p class="ft12">(5分钟内到账)</p>');
+	            	$(".prizeinfo").show();
+	    	        //绑定抽奖实践
+	                $("#lotteryBtn").click(getPrize); 
+	    	        //减少页面积分  减少抽奖次数
+	    	        $("#usersTimes").html(parseInt($("#usersTimes").html())-1);
+	    	        $("#usersInt").html(parseInt($("#usersInt").html())-20);
+	            }
+	        });
+	  }
+
+
+});
+</script>
+
+<footer class="fotter_Copy">
+    <h1>
+	<p>
+		<a href="http://m.banggo.com/login?u=/ploy?pid=11">登录</a> |
+		<a href="http://m.banggo.com/login/register?u=/ploy?pid=11">注册</a>
+	</p>
+	     <span id="top" class="tophead">返回顶部 ▲</span> 
+</h1>
+    
+  <div class="down_app">
+  	<a href="http://m.banggo.com/Goods/app">
+  <img class="lazy"  src="http://s.mb-go.com/pub7/style/images/grey.gif" original="http://img.mbanggo.com/sources/bgimages/20140501/download_app_20140501.jpg" width="320" height="50"></a></div>
+  <div class="copy_right"><a class="pr10" href="http://m.banggo.com"> 触屏版</a> | <a class="pl10" href="http://www.banggo.com">电脑版</a><br /><a href="tel:4008219988">服务热线：<span class="blue">400 821 9988</span></a><br/>CopyRight © 2013 m.banggo.com</div>
+</footer>
+
+
+<script>
+	// 判断设备
+	addEventListener('load', function(){
+      if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+          $("body").addClass("ua-ios");
+      }
+  });
+</script>
+
+
+						
+</body>
+</html>
